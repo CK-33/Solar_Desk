@@ -1,0 +1,77 @@
+{
+  "version": "20260924-050820-5ca11e",
+  "created": "2026-09-24T05:08:20",
+  "trained_through": "2020-11-25T12:45:00+00:00",
+  "evaluated_until": "2021-01-01T02:45:00+00:00",
+  "features": [
+    "POA",
+    "hour_sin",
+    "hour_cos",
+    "doy_sin",
+    "doy_cos",
+    "POA_lag_1",
+    "POA_lag_2",
+    "POA_lag_4",
+    "POA_lag_8",
+    "POA_lag_12",
+    "POA_lag_24",
+    "Pdc1_lag_1",
+    "Pdc1_lag_2",
+    "POA_roll_mean_4"
+  ],
+  "cadence_minutes": 15,
+  "best_iteration": 1199,
+  "coef": [
+    0.2905756458221915,
+    0.6724304125443877
+  ],
+  "intercept": 1.2831281220797024,
+  "sigma": 48.313730506427845,
+  "metrics": {
+    "mae": 19.243824007060013,
+    "rmse": 44.52832649297444,
+    "r2": 0.8263189801150694,
+    "n": 1794
+  },
+  "persistence": {
+    "mae": 40.01144370122631,
+    "rmse": 66.70347664217995,
+    "r2": 0.6102585876714867,
+    "n": 1794
+  },
+  "incumbent": null,
+  "previous_version": null,
+  "eligible": true,
+  "rows": 35112,
+  "periods": {
+    "base": {
+      "start": "2020-01-01T09:00:00+00:00",
+      "end": "2020-08-07T19:15:00+00:00",
+      "rows": 21066
+    },
+    "early_stopping": {
+      "start": "2020-08-07T19:30:00+00:00",
+      "end": "2020-09-13T09:00:00+00:00",
+      "rows": 3511
+    },
+    "stacking": {
+      "start": "2020-09-13T09:15:00+00:00",
+      "end": "2020-10-19T22:45:00+00:00",
+      "rows": 3511
+    },
+    "calibration": {
+      "start": "2020-10-19T23:00:00+00:00",
+      "end": "2020-11-25T12:45:00+00:00",
+      "rows": 3512
+    },
+    "test": {
+      "start": "2020-11-25T13:00:00+00:00",
+      "end": "2021-01-01T02:45:00+00:00",
+      "rows": 3512
+    }
+  },
+  "data_origin": "Base fornecida pelo usuário; procedência e códigos Validacao não confirmados.",
+  "versions": {
+    "xgboost": "3.4.1"
+  }
+}
