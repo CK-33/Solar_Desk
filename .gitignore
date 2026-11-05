@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/*
+!data/historico.sqlite3
+!data/models/
+outputs/
+*.sqlite3-wal
+*.sqlite3-shm
+*.log
+.env
+.env.*
+!.env.example
+build/
+dist/
